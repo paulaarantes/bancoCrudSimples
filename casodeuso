@@ -1,0 +1,198 @@
+Documento de Especificação Casos de Uso
+Banco Crud Simples
+Grupo: Paula Arantes Naves 
+
+
+Documento de Especificação de Casos de
+		Uso		
+
+Grupo:
+Paula Arantes Naves
+			 
+1. Índice
+ 
+ 
+2. Objetivo
+
+Criar uma conta bancária simples e um dono. As atividades que serão realizadas são: depositar, sacar 
+e visualizar saldo.
+
+
+3. Identificação dos atores 
+
+3.1.Ator-01 Correntista
+
+
+4. Identificação dos Casos de Uso 
+
+4.1.UC-01 Autenticação no sistema;
+
+4.2.UC-02 Deposita quantia na conta;
+
+4.3.UC-03 Saca quantia na conta;
+
+4.4.UC-04 Visualiza saldo da conta;
+
+
+5. Diagrama de casos de uso
+
+
+
+6. Detalhamento dos casos de uso
+
+6.1.UC-01 Autenticação no sistema;
+
+Descrição: Este caso de uso especifica a ação de autenticar usuario no sistema 
+
+(a) Atores: Dono
+
+(b) Pré-condições:
+  
+1. O ator precisa estar cadastrado no banco
+2. A conta bancaria precisa estar ativa no banco
+  
+(c) Pós-condições:
+  
+1. O ator fica habilitado a realizar ações de depósito, saque e visualização de saldo
+
+(d) Requisitos funcionais:
+
+1. RF01 - O portal deve prover uma interface para dono da conta inserir os dados de autenticação
+  1.1 Nome
+  1.2 Numero da conta
+
+Fluxo Básico:
+
+1. O ator decide se autenticar no sistema.
+2. O sistema solicita as informações para autenticar no sistema
+  2.1. Nome
+  2.2. Número da conta
+3. O ator informa os dados de autenticação.
+4. O sistema valida os dados de autenticação.
+5. O sistema informa que a autenticação foi realizada
+com sucesso.
+6. O sistema mostra a tela de opções disponiveis
+  6.1 depositar
+  6.2 sacar
+  6.3 visualizar saldo
+
+O caso de uso se encerra.
+
+Fluxo Alternativo A:
+
+1. No passo 4 do Fluxo Básico, caso haja algum erro na autenticação
+relacionado aos dados informados:
+2. O sistema informa o erro ao ator.
+  2.1 "Nome de usuario não existe"
+  2.2 "Numero de conta não existe"
+3. O fluxo retorna ao passo 2 do fluxo básico.
+
+6.2.UC-02 Deposita quantia na conta;
+
+Descrição: Este caso de uso especifica a ação de depositar uma quantia na conta bancaria 
+
+(a) Atores: Dono
+
+(b) Pré-condições:
+  
+1. O ator precisa estar autenticado no sistema
+
+(c) Pós-condições:
+  
+1. O saldo da conta bancaria ficará atualizada com um novo valor
+
+(d) Requisitos funcionais:
+
+1. RF01 - O portal deve prover uma interface para dono da conta selecionar a opcao desejada (depósito)
+
+Fluxo Básico:
+
+1. O ator decide selecionar a opcao depósito
+2. O sistema solicita as informações para realizar o depósito
+  2.1. Valor
+3. O ator informa o valor a ser depositado
+4. O sistema atualiza o saldo da conta
+5. O sistema informa que o depósito foi realizado com sucesso.
+6. O sistema mostra a tela de opções disponiveis
+  6.1 depositar
+  6.2 sacar
+  6.3 visualizar saldo
+  6.4 encerrar sessão
+
+O caso de uso se encerra.
+
+
+6.3.UC-03 Saca quantia da conta;
+
+Descrição: Este caso de uso especifica a ação de sacar uma quantia da conta bancaria 
+
+(a) Atores: Dono
+
+(b) Pré-condições:
+  
+1. O ator precisa estar autenticado no sistema
+2. O saldo presica ser suficiente para realizar o saque
+
+(c) Pós-condições:
+  
+1. O saldo da conta bancaria ficará atualizada com um novo valor
+
+(d) Requisitos funcionais:
+
+1. RF01 - O portal deve prover uma interface para dono da conta selecionar a opcao desejada (saque)
+
+Fluxo Básico:
+
+1. O ator decide selecionar a opcao saque
+2. O sistema solicita as informações para realizar o saque
+  2.1. Valor
+3. O ator informa o valor a ser sacado
+4. O sistema atualiza o saldo da conta
+5. O sistema informa que o depósito foi realizado com sucesso.
+6. O sistema mostra a tela de opções disponiveis
+  6.1 depositar
+  6.2 sacar
+  6.3 visualizar saldo
+  6.4 encerrar sessão
+
+O caso de uso se encerra.
+
+Fluxo Alternativo A:
+
+1. No passo 3 do Fluxo Básico, caso haja algum erro
+relacionado ao valor a ser sacado
+2. O sistema informa o erro ao ator.
+  2.1 "Saldo Insuficiente"
+3. O fluxo retorna ao passo 2 do fluxo básico
+
+6.4.UC-04 Visualiza saldo da conta;
+
+Descrição: Este caso de uso especifica a ação de visualizar o saldo da conta bancaria 
+
+(a) Atores: Dono
+
+(b) Pré-condições:
+  
+1. O ator precisa estar autenticado no sistema
+
+(c) Pós-condições:
+  
+1. O saldo da conta bancaria será mostrado na tela
+
+(d) Requisitos funcionais:
+
+1. RF01 - O portal deve prover uma interface para dono da conta selecionar a opcao desejada (visualizar saldo)
+
+Fluxo Básico:
+
+1. O ator decide selecionar a opcao visualizar saldo
+2. O sistema mostra o saldo da conta na tela
+6. O sistema mostra a tela de opções disponiveis
+  
+  6.1 encerrar sessão
+
+O caso de uso se encerra.
+
+
+
+
