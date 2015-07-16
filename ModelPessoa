@@ -1,0 +1,49 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Model;
+
+/**
+ *
+ * @author PAULA 
+ */
+public class ModelPessoa {
+    
+    //atributos
+    private final int codigoPessoa; //devera ser setado um vez somente, por isso sera setado no construtor
+    private String nome;  //podera ser alterado caso haja erro de digitacao por isso tera um setNome
+    private int cpf; //podera ser alterado caso haja erro de digitacao por isso tera um setCpf
+    
+    //construtor
+    
+    public ModelPessoa(int codigoPessoa, String nome, int cpf){
+        this.codigoPessoa = codigoPessoa;
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+    
+    //getters e setters
+    
+            
+    public void getCodigoPessoa(){ //sera setado no construtor
+       
+    }
+    
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    
+    public String getNome(){
+        return this.nome;   
+    }
+    
+    public void setCpf(int cpf){
+        this.cpf = cpf;
+    }
+    
+    public int getCpf(){
+        return this.cpf;
+    }
+}
